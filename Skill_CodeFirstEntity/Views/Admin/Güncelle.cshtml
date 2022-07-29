@@ -1,0 +1,27 @@
+﻿@model Skill_CodeFirstEntity.Models.Siniflar.YETENEKLER
+@{
+    ViewBag.Title = "Güncelle";
+    Layout = "~/Views/Shared/_LayoutNavbar.cshtml";
+}
+
+<form action="form-group" method="post">
+    <div>
+       
+        @Html.HiddenFor(x => x.ID)
+    </div>
+    <div>
+        <label>Yetenek Açıklama</label>
+        @Html.TextBoxFor(x => x.ACIKLAMA, new { @class = "form-control" })
+    </div>
+    <div>
+        <label>Yetenek Değeri</label>
+        @Html.TextBoxFor(x => x.DEGER, new { @class = "form-control" })
+    </div>
+    <br />  
+    <div>
+        <button class="btn btn-warning">Güncelle</button>
+    </div>
+
+</form>
+
+
